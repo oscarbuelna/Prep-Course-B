@@ -90,12 +90,22 @@ function devolverString(str) {
     // Devuelve "true" si "num" es par
     // De lo contrario, devuelve "false"
     // Tu código:
+    if(num%2===0){
+      return true;
+    }else{
+      return false;
+    }
   }
   
   function esImpar(num) {
     // Devuelve "true" si "num" es impar
     // De lo contrario, devuelve "false"
     // Tu código:
+    if(num%2!=0){
+      return true;
+    }else{
+      return false;
+    }
   }
   
   function elevarAlCuadrado(num) {
@@ -120,11 +130,13 @@ function devolverString(str) {
   function redondearNumero(num) {
     // Redondea "num" al entero más próximo y devuélvelo
     // Tu código:
+    return Math.round(num)
   }
   
   function redondearHaciaArriba(num) {
     // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
     // Tu código:
+    return Math.ceil(num)
   }
   
   function numeroRandom() {
@@ -192,6 +204,8 @@ function devolverString(str) {
     //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
     //como parámetro un número de euros y calcule el cambio en dólares.
     //Escribe tu código aquí
+    var dolar = euro*1.20
+    return dolar
   }
   
   // No modificar nada debajo de esta línea
